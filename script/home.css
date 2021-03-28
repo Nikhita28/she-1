@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-color: rgb(0, 0, 0);
-} 
+}
 body{
   background-color: black;
 }
@@ -13,6 +13,7 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 20;
 }
 nav{
   display: flex;
@@ -59,6 +60,85 @@ nav .menu-btn i{
   cursor: pointer;
   display: none;
 }
+.banner-container{
+    background-image: url(../assets/Banner-img.png);
+    height: 100vh;
+    background-attachment: fixed;
+}
+.banner-text{
+    float: right;
+    padding-top: 10%;
+    padding-right: 10%;
+    text-align: center;
+    background-color: rgba(1,1,1,0);
+}
+.banner-text h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    background-color: rgba(1,1,1,0);
+}
+.banner-text h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    background-color: rgba(1,1,1,0);
+}
+.banner-text span{
+    font-weight: bold;
+    background-color: rgba(1,1,1,0);
+}
+.bton{
+  background-color: rgba(1,1,1,0);
+}
+.lg-btn {
+    border-radius: 4px;
+    background-color: rgba(1,1,1,0);
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    border: 2px solid black;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  .lg-btn:hover{
+      background-color: rgba(85, 83, 83, 0.295);
+  }
+
+  .lg-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .lg-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: black;
+  }
+
+  .lg-btn:hover span {
+    padding-right: 25px;
+    color: black;
+  }
+
+  .lg-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 input[type="checkbox"]{
   display: none;
 }
@@ -122,7 +202,7 @@ input[type="checkbox"]{
 {
  max-width: 450px;
  margin-top: 100px;
- 
+
 }
 .box4 .floating-image
 {
@@ -168,7 +248,7 @@ input[type="checkbox"]{
  {
    max-width: 400px;
  }
- 
+
 
  #box1a{ order: 1;}
  #box2a{ order: 2;}
@@ -208,7 +288,7 @@ h1{
    padding-right: 30px;
    margin-right: 0%;
  }
- 
+
 }
 
 @media(max-width:786px){
@@ -231,7 +311,7 @@ h1{
 }
 @media(min-width:1117px){
   .box2{max-width: 50%;}
-  .box3{max-width: 50%;}   
+  .box3{max-width: 50%;}
 }
 .sch_into{
   margin-left: 200px;
@@ -242,7 +322,7 @@ h1{
 }
 .sch_into h2{
   font-weight: 700;
-  color: rgb(255, 208, 0, 0.952); 
+  color: rgb(255, 208, 0, 0.952);
   font-weight: 700;
   text-align: center;
   margin-bottom: 25px;
@@ -266,7 +346,7 @@ h1{
 .card{
   margin: 3%;
   z-index: 0;
- 
+
 }
 @media(max-width:1116px){
   .sch_card{
@@ -276,7 +356,7 @@ h1{
 @media(max-width:780px){
   .sch_card{
     display: inline;
-    
+
   }
   .card{
     margin-left: 30%;
@@ -290,7 +370,7 @@ h1{
 }
 }
 .card-title{
-  color: rgb(255, 208, 0, 0.952); 
+  color: rgb(255, 208, 0, 0.952);
   font-style: oblique;
 }
 .card-text{
@@ -321,4 +401,14 @@ background-color:rgb(255, 208, 0, 0.952) !important;
   color: rgb(255, 208, 0, 0.952);
   font-weight: bolder;
   align-items: center;
+}
+.heading-txt{
+  margin-top: 90px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading-txt h1{
+  font-size: 4rem;
+  color: rgb(255, 208, 0, 0.952);
+  font-weight: bold;
 }
