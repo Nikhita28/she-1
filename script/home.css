@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(0, 0, 0);
+} 
+body{
+  background-color: black;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav{
+  display: flex;
+  z-index: 1000000000000000000px;
+  height: 80px;
+  width: 100%;
+  background: #000000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: rgb(255, 255, 255);
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: rgb(255, 208, 0, 0.952);
+  }
+}
+
+.container1{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.box1 .floating-image
+{
+ max-width: 450px;
+ margin-top: 100px;
+ 
+}
+.box4 .floating-image
+{
+ max-width: 450px;
+ justify-content: center;
+}
+.box2{
+ font-style: oblique;
+ justify-content: center;
+ align-content: center;
+ max-height: fit-content;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-right: 0%;
+ color: white;
+}
+.box3{
+ font-style: oblique;
+ justify-content: center;
+ padding-top: 50px;
+ align-content: center;
+ max-height: fit-content;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-right: 0%;
+ color: white;
+}
+.box3 h2{
+  font-weight: 700;
+  color: rgb(255, 208, 0, 0.952);
+}
+.box2 h2{
+  font-weight: 700;
+  color: rgb(255, 208, 0, 0.952);
+}
+
+@media(max-width:1116px){
+ .box1 .floating-image
+ {
+   max-width: 400px;
+ }
+ .box4 .floating-image
+ {
+   max-width: 400px;
+ }
+ 
+
+ #box1a{ order: 1;}
+ #box2a{ order: 2;}
+ #box3a{ order: 4;}
+ #box4a{ order: 3;}
+
+h1{
+  padding-top: 40px;
+}
+
+}
+
+@media(min-width:786px){
+ .box1 .floating-image
+ {
+   max-width: 450px;
+ }
+ .box4 .floating-image
+ {
+   max-width: 450px;
+ }
+ .box2{
+   align-content: center;
+   justify-content: center;
+   max-height: fit-content;
+   padding-top: 50px;
+   padding-left: 30px;
+   padding-right: 30px;
+   margin-right: 0%;
+ }
+ .box3{
+   align-content: center;
+   justify-content: center;
+   max-height: fit-content;
+   padding-top: 70px;
+   padding-left: 30px;
+   padding-right: 30px;
+   margin-right: 0%;
+ }
+ 
+}
+
+@media(max-width:786px){
+ .box1 .floating-image
+{
+ max-width: 400px;
+ padding-bottom: 50px;
+}
+.box4 .floating-image
+{
+ max-width: 400px;
+ padding-top: 30px;
+}
+
+
+#box1a{ order: 1;}
+#box2a{ order: 2;}
+#box3a{ order: 4;}
+#box4a{ order: 3;}
+}
+@media(min-width:1117px){
+  .box2{max-width: 50%;}
+  .box3{max-width: 50%;}   
+}
+.sch_into{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  padding: 10px;
+  font-style: oblique;
+}
+.sch_into h2{
+  font-weight: 700;
+  color: rgb(255, 208, 0, 0.952); 
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sch_into p{
+  color: white;
+}
+@media(max-width:1000px){
+  .sch_into{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+}
+.sch_card{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  padding-left: 6%;
+}
+.card{
+  margin: 3%;
+  z-index: 0;
+ 
+}
+@media(max-width:1116px){
+  .sch_card{
+    padding-left: 2%;
+  }
+}
+@media(max-width:780px){
+  .sch_card{
+    display: inline;
+    
+  }
+  .card{
+    margin-left: 30%;
+    margin-right: 22%;
+  }
+}
+@media(max-width:600px){
+  .card{
+    margin-left: 22%;
+    margin-right: 30%;
+}
+}
+.card-title{
+  color: rgb(255, 208, 0, 0.952); 
+  font-style: oblique;
+}
+.card-text{
+  color: white;
+  font-weight: normal;
+}
+.btn {
+  color: black;
+  background-color: white;
+}
+.btn:hover
+{
+background-color:rgb(255, 208, 0, 0.952) !important;
+}
+.click h2{
+  font-size: larger;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.click h2 a{
+  color: rgb(255, 208, 0, 0.952);
+}
+.click h2 a:hover{
+  color: rgba(217, 255, 0, 0.952);
+}
+.heading h1{
+  color: rgb(255, 208, 0, 0.952);
+  font-weight: bolder;
+  align-items: center;
+}
